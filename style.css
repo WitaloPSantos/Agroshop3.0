@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Vina+Sans&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+
+}
+body{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+/* ESTILOS PAGE-LOGIN */
+.conteudo_page_login{
+   
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    box-shadow: 0 0.1rem 0.5rem 0.8;
+}
+.cabecalho h1{
+    padding: 20px;
+    color: #347571;
+    font-family: 'Vina Sans', sans-serif;
+
+}
+.tela_login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px #347571;
+    border-radius: 10px;
+    height: auto;
+    width: 40%;
+
+}
+
+.esqueci_senha {
+font-size: 1rem;
+color: gray;
+align-self: flex-start;
+padding: 0px 0px 30px 10px;
+margin-top: 10px;
+}
+.esqueci_senha p a{
+color: gray;
+}
+.esqueci_senha:hover{
+color: #0f3936;
+}
+
+.tela_login input{
+padding: 10px;
+width: 80%;
+border-radius: 10px;
+border: 2px solid #347571;
+}
+.tela_login button{
+border:none;
+background-color: #347571;
+width: 80%;
+border-radius: 10px;
+padding: 10px 0;
+align-self: center;
+margin-top: 20px;
+color: white;
+font-weight: 500;
+margin-bottom: 40px;
+cursor: pointer;
+}
+.tela_login button:hover{
+background-color: #5fb4af;
+}
+.login_botao_voltar{
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.login_botao_voltar img{
+width: 30px;
+height: 30px;
+
+}
+.login_form label{
+align-self: flex-start;
+padding-left: 50px;
+font-size: 1rem;
+font-weight: 500;
+}
+form{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+padding: 10px;
+gap: 20px;
+}
+
+@media (max-width:800px){
+.tela_login{
+border: none;
+width: 70%;
+}
+}
+
+
+

@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Vina+Sans&display=swap');
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style-type: none;
+
+}
+/* cabeça do projeto  */
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+main{
+padding: 0 80px;
+}
+/* essas classes serve para dar visibilidade para o anuncio do produto na pagina inicial deixando-a mais bonita. isso usando css */
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* dentro da classe navegador ira conter conter diversas outras classes que servirão como classes filhas que se agruparão para deixar o site mais dinamico */
+/* a classe navegador servira para colocar a cor e onde hospedara os icones e os links de home / produtos e outros */
+.navegador{
+    background-color: #347571 ;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #7B6823;
+    z-index: 99;
+}
+ 
+.navegador>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 30px;
+    color:white;
+    font-family: 'Vina Sans', sans-serif;
+}
+.barra_navegacao_nav ul li a{
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ color: white;
+}
+
+
+#menu-bar {
+    display: none;
+    position: fixed;
+    top: 70;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#menu-bar li {
+    margin: 0;
+    width: 100%;
+}
+
+#menu-bar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+
+#nav-bar {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-bar-icones{
+width: 20px;
+height: auto;
+}
+
+
+  
+  
+ 
+  /* como o nome da calsse ja se explica serve para dar essas cores ao botão e esses efeito de profundidade assim fazendo com que o cliente tenha 
+  uma experiencia daora e não cansativa para o usuario */
+
+.botao_menu{
+background-color: #347571;
+border: none;
+}
+
+.imagem img{
+width: 30px;
+cursor: pointer;
+
+}
+
+.imagem img:first-child{
+    margin-right: 1rem;
+
+}
+
+
+
+nav ul li{
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+
+}
+
+nav ul li:hover{
+    transform: translate(-5px);
+    transition: 0.2s;
+    font-weight: bold;
+
+}
+
+/*   */
+header{
+    background-image:url(/assents/imagem/cesta-verduras.webp) ;
+    background-position: right;
+    background-repeat: no-repeat;
+    box-shadow: inset 50px 50px 300px rgba(0, 0, 0, 0.5);
+    
+}
+   
+/*  */
+.header-bottom-side{
+
+    padding: 1rem;
+
+}
+
+.header-bottom-side-left{
+    padding: 10px 0;
+    height: 100%;
+    flex-basis: 50%;
+    width: 100%;
+}
+
+
+
+.header-bottom-side-left p{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    color: white;
+    font-weight: 800;
+}
+
+.header-bottom-side-left button{
+    background-color:#038C3E ;
+    border:none;
+    cursor: pointer;
+    padding: 0.5rem 2.8rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight:600 ;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.header-bottom-side-left button:hover{
+    background-color: #02735E;
+
+
+}
+
+.header-bottom-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img{
+    width: 90%;
+    border-radius: 50px 50px 50px 50px;
+}
+.menu-bar{
+    display: none;
+}
+.botao_menu{
+display: none;
+}
+
+
+/* header fim */
+
+
+/*main content */
+
+.green-background{
+    background-color:#F2F2F2 ;
+    height: 10px;
+
+}
+.pag_produtos_selecionados{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.produto_selecionado{
+    display: flex;
+    padding: 20px 20px;
+    gap: 30px;
+}
+.imagem_produto_selecionado{
+width: 50%;
+height: 50%;
+align-self: center;
+}
+.nome_produto{
+font-size: 1.8rem;
+color: #347571;
+}
+.descricao_produto{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.valor_produto{
+font-size: 1.5rem;
+font-weight: 900;
+
+}
+.descricao_produto_texto{
+
+}
+
+
+.titulo_produtos_selecionados{
+    align-self: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #347571;
+    align-self: flex-start;
+}
+.cols{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.cols_prod_selecionado {
+    display: grid;
+    overflow: scroll;
+    flex-direction: row;
+    grid-template-columns: repeat(4, 200px);
+    gap: 5px;
+
+}
+
+.container_produtos_relacionados{
+display: grid;
+grid-template-columns: repeat(4, 250px);
+gap: 10px;
+align-self: flex-start;
+ 
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+.imagem_produto{
+    width: 100%;
+    height: 150px;
+    -webkit-border-top-left-radius:10px;
+    -webkit-border-top-right-radius:10px;
+}
+.nome_produto{
+color: black;
+font-weight: 800;
+font-size: 1rem;
+}
+.estrelas{
+color: black;
+}
+.valor_produto{
+color: #347571;
+font-weight: 800;
+}
+.botao_adicionar{
+    border: none;
+    background-color: #347571;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    align-self: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.titulo_categoria{
+    align-self: center;
+    font-size: 1.5rem;
+    color: #347571;
+    margin: 30px 0;
+}
+
+
+
+.product p{
+padding-left: 10px;
+}
+
+.product button:hover{
+background-color: #67b9b3;
+}
+/* container das categorias */
+/* qual a necessidade de usar um containers? reduzem a necessidade de contar com uma grande estrutura e permitem utilizar apenas um sistema operacional normal */
+.container_produtos_categoria{
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    grid-template-rows: 190px 190px;
+    align-self: center;
+    gap: 10px;
+    
+}
+.container_pro_cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo_cat_produto{
+    align-self: center;
+    margin: 30px 0;
+}
+.produtos_categoria{
+    background-color: #9de3d6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+.produtos_categoria img{
+  width: 30px;
+}
+.page-inner-content h4{
+    align-self: center;
+    font-size: 2rem;
+    color: #347571;
+    margin: 20px 0;
+}
+
+/* Produto selecionado */
+.titulo_produtos_selecionados{
+    font-size: 1rem;
+    }
+    .imagem{
+        display: flex;
+    }
+    .imagem button{
+        display: flex;
+        
+    }
+    .header-bottom-side-left p{
+        font-size: 1.5rem;
+    }
+     
+
+/* rodape */
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #347571;
+    color: white;
+    padding: 50px 10px;
+    margin-top: 50px;
+    font-size: 0.8rem;
+}
+.empresa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.empresa div{
+    margin-bottom: 70px;
+}
+.empresa h6{
+    font-size: 1.2rem;
+    font-family: 'Vina Sans', sans-serif;
+}
+.empresa p{
+font-size: 0.6rem;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+.contato p{
+    align-self: flex-start;
+    
+}
+.texto_contato{
+    font-weight: 900;
+}
+.whatsapp{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.whatsapp img{
+    width: 20px;
+    height: 20px;
+}
+.links_importantes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.links_importantes p{
+    font-weight: 900;
+}
+.links_importantes ul li a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* midia queries */
+@media (max-width:630px){
+    header{
+    background-size: cover;
+    }
+    .barra_navegacao_nav{
+    display: none;
+    }
+    .menu{
+    display: block;
+    }
+    .imagem_produto{
+        width: 100%;
+        height: 100px;
+        align-self: center;
+        border: solid 1px gray;
+    }
+    #nav-bar {
+        display: flex;
+    }
+   
+}
+    
+   footer{
+        grid-template-columns: repeat(2,1fr);
+        font-size: 0.6;
+    
+    }
+    .container_whtasapp p{
+        font-size: 0.5rem;
+        
+    }
+    .contato{
+        margin-bottom: 40px;
+    }
+            
+
+
+@media (max-width:1098px){
+
+    .cols{
+    grid-template-columns: repeat(4, 150px);
+    overflow: scroll;
+    } 
+    main{
+    padding: 10px;
+    }   
+    .botao_adicionar{
+    width: 40%;
+    margin-top: 20px;
+    }
+        
+    .container_produtos_categoria{
+        grid-template-columns: repeat(4, 120px);
+        grid-template-rows: repeat(2, 120px);
+        gap: 5px;  
+       justify-content: center;
+    }
+    .produtos_categoria{
+    gap: 15px;
+    }
+    .page-inner-content h4{
+        align-self: center;
+        font-size: 1.2rem;  
+    }
+
+    .produto_selecionado{
+    flex-direction: column;
+    }
+    .container_produtos_relacionados{
+    grid-template-columns: repeat(4, 200px);
+    }
+  
+    .imagem_produto_selecionado{
+    width: 70%;
+    height: 70%;
+    }
+}
+@media (max-width:450px){
+    .container_produtos_categoria{
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(3, 80px);
+       
+    }
+    .produtos_categoria img{
+        width: 20px;
+      }
+      .produtos_categoria{
+       gap: 5px;
+        }
+
+
+}
